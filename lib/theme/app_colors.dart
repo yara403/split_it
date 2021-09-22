@@ -5,11 +5,30 @@ abstract class AppColors {
   Color get backgroundSecondary;
   Color get title;
   Color get button;
+  Color get titleAppBar;
   Color get border;
-  Color get borderCardReceive;
-  Color get borderCardPay;
-  Color get backgroundPaySymbol;
-  Color get payCardSecondary;
+  Color get border2;
+  Color get icon;
+  Color get iconBackground1;
+  Color get iconBackground2;
+  Color get infoCardTitle;
+  Color get infoCardSubTitle1;
+  Color get infoCardSubTitle2;
+  Color get eventTileTitle;
+  Color get eventTileSubTitle;
+  Color get eventTileMoney;
+  Color get eventTilePeople;
+  Color get divider;
+  Color get stepperIndicatorPrimary;
+  Color get stepperIndicatorSecondary;
+  Color get backButton;
+  Color get stepperNextButton;
+  Color get stepperNextButtonDisabled;
+  Color get stepperTitle;
+  Color get stepperSubtitle;
+  Color get hintTextField;
+  Color get textField;
+  Color get inputBorder;
 }
 
 class AppColorsDefault implements AppColors {
@@ -29,14 +48,71 @@ class AppColorsDefault implements AppColors {
   Color get border => Color(0xFFDCE0E5);
 
   @override
-  Color get borderCardReceive => Color(0xFFE6F0ED);
+  Color get titleAppBar => Color(0xFFFFFFFF);
 
   @override
-  Color get borderCardPay => Color(0xFFF0E6E8);
+  Color get border2 => Color(0xFFFFFFFF);
 
   @override
-  Color get backgroundPaySymbol => Color(0xFFE83F5B).withOpacity(0.1);
+  Color get icon => Color(0xFFFFFFFF);
 
   @override
-  Color get payCardSecondary => Color(0xFFE83F5B);
+  Color get iconBackground1 => Color(0xFF45CC93);
+
+  @override
+  Color get infoCardTitle => Color(0xFF666666);
+
+  @override
+  Color get infoCardSubTitle1 => Color(0xFF40B38C);
+
+  @override
+  Color get infoCardSubTitle2 => Color(0xFFE83F5B);
+
+  @override
+  Color get iconBackground2 => Color(0xFFE83F5B);
+
+  @override
+  Color get eventTileMoney => Color(0xFF666666);
+
+  @override
+  Color get eventTilePeople => Color(0xFFA4B2AE);
+
+  @override
+  Color get eventTileSubTitle => Color(0xFF666666);
+
+  @override
+  Color get eventTileTitle => Color(0xFF455250);
+
+  @override
+  Color get divider => Color(0xFF666666);
+
+  @override
+  Color get stepperIndicatorPrimary => Color(0xFF45CC93);
+
+  @override
+  Color get stepperIndicatorSecondary => Color(0xFF666666);
+
+  @override
+  Color get backButton => Color(0xFF666666);
+
+  @override
+  Color get stepperNextButton => Color(0xFF455250);
+
+  @override
+  Color get stepperSubtitle => Color(0xFF455250);
+
+  @override
+  Color get stepperTitle => Color(0xFF455250);
+
+  @override
+  Color get hintTextField => Color(0xFF666666);
+
+  @override
+  Color get textField => Color(0xFF455250);
+
+  @override
+  Color get inputBorder => Color(0xFF455250);
+
+  @override
+  Color get stepperNextButtonDisabled => Color(0xFF666666).withOpacity(0.4);
 }
