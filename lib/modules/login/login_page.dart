@@ -89,14 +89,14 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 12,
               ),
-              Padding(
+              /*Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 32),
                 child: SocialButtonWidget(
                   imagePath: 'assets/images/apple.png',
                   label: 'Entrar com Apple',
                   onTap: () {},
                 ),
-              ),
+              ),*/
             ],
           ),
         ],
