@@ -6,7 +6,7 @@ class HomeRepositoryMock implements HomeRepository {
   @override
   Future<DashboardModel> getDashBoard() async {
     await Future.delayed(Duration(seconds: 2));
-    return DashboardModel(send: 48, receive: 186);
+    return DashboardModel(send: 48, receive: 446);
   }
 
   @override
@@ -16,7 +16,7 @@ class HomeRepositoryMock implements HomeRepository {
       EventModel(
         title: 'Churrasco',
         created: DateTime.now(),
-        value: 32,
+        value: 126,
         people: 1,
       ),
       EventModel(

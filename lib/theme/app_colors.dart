@@ -29,6 +29,27 @@ abstract class AppColors {
   Color get hintTextField;
   Color get textField;
   Color get inputBorder;
+  Color get backButtonEvent;
+  Color get titleEvent;
+  Color get deleteButtonEvent;
+  Color get dividerEvent;
+  Color get checkboxChecked;
+  Color get checkColor;
+  Color get titleIntegrants;
+  Color get nameIntegrant;
+  Color get creditValue;
+  Color get debtValue;
+  Color get activeCheckbox;
+  Color get borderCheckbox;
+  Color get activeCheckboxArea;
+  Color get checkboxArea;
+  Color get dividerItens;
+  Color get headerItens;
+  Color get titleItem;
+  Color get itemTileValue;
+  Color get total;
+  Color get backgroundTotal;
+  Color get debit;
 }
 
 class AppColorsDefault implements AppColors {
@@ -115,4 +136,67 @@ class AppColorsDefault implements AppColors {
 
   @override
   Color get stepperNextButtonDisabled => Color(0xFF666666).withOpacity(0.4);
+
+  @override
+  Color get backButtonEvent => Color(0xFF666666);
+
+  @override
+  Color get titleEvent => Color(0xFF455250);
+
+  @override
+  Color get deleteButtonEvent => Color(0xFF666666);
+
+  @override
+  Color get dividerEvent => Color(0xFF455250).withOpacity(0.08);
+
+  @override
+  Color get checkboxChecked => Color(0xFF40B28C);
+
+  @override
+  Color get checkColor => Color(0xFFFFFFFF);
+
+  @override
+  Color get titleIntegrants => Color(0xFF455250);
+
+  @override
+  Color get nameIntegrant => Color(0xFF666666);
+
+  @override
+  Color get creditValue => Color(0xFF40B28C);
+
+  @override
+  Color get debtValue => Color(0xFFE83F5B);
+
+  @override
+  Color get activeCheckbox => Color(0xFF40B28C);
+
+  @override
+  Color get borderCheckbox => Color(0xFFC0CCC9);
+
+  @override
+  Color get activeCheckboxArea => Color(0xFF40B28C).withOpacity(0.16);
+
+  @override
+  Color get checkboxArea => Color(0xFF455250).withOpacity(0.08);
+
+  @override
+  Color get dividerItens => Color(0xFF666666).withOpacity(0.2);
+
+  @override
+  Color get headerItens => Color(0xFF455250);
+
+  @override
+  Color get titleItem => Color(0xFF455250);
+
+  @override
+  Color get itemTileValue => Color(0xFF666666);
+
+  @override
+  Color get total => Color(0xFF455250);
+
+  @override
+  Color get backgroundTotal => Color(0xFF455250).withOpacity(0.08);
+
+  @override
+  Color get debit => Color(0xFFE83F5B);
 }

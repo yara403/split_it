@@ -70,29 +70,35 @@ class EventTileWidget extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  ListTile(
-                    contentPadding: EdgeInsets.zero,
-                    title: Text(
-                      event.title!,
-                      style: AppTheme.textStyles.eventTileTitle,
-                    ),
-                    subtitle: Text(
-                      formmattedDate,
-                      style: AppTheme.textStyles.eventTileSubTitle,
-                    ),
-                    trailing: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text('R\$ $formmattedValue',
-                            style: AppTheme.textStyles.eventTileMoney),
-                        SizedBox(
-                          height: 3,
-                        ),
-                        Text(
-                            "${event.people} amigo${event.people! > 1 ? 's' : ''}",
-                            style: AppTheme.textStyles.eventTilePeople),
-                      ],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, "/event_details",
+                          arguments: event);
+                    },
+                    child: ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      title: Text(
+                        event.title!,
+                        style: AppTheme.textStyles.eventTileTitle,
+                      ),
+                      subtitle: Text(
+                        formmattedDate,
+                        style: AppTheme.textStyles.eventTileSubTitle,
+                      ),
+                      trailing: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text('R\$ $formmattedValue',
+                              style: AppTheme.textStyles.eventTileMoney),
+                          SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                              "${event.people} amigo${event.people! > 1 ? 's' : ''}",
+                              style: AppTheme.textStyles.eventTilePeople),
+                        ],
+                      ),
                     ),
                   ),
                   Divider(

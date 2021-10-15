@@ -22,6 +22,17 @@ abstract class AppTextStyles {
   TextStyle get stepperSubtitle;
   TextStyle get textField;
   TextStyle get hintTextField;
+  TextStyle get titleEvent;
+  TextStyle get titleIntegrants;
+  TextStyle get nameIntegrant;
+  TextStyle get creditValue;
+  TextStyle get debtValue;
+  TextStyle get headerItens;
+  TextStyle get titleItem;
+  TextStyle get itemTileValue;
+  TextStyle get titleTotal;
+  TextStyle get valueTotal;
+  TextStyle get debit;
 }
 
 class AppTextStylesDefault extends AppTextStyles {
@@ -150,4 +161,72 @@ class AppTextStylesDefault extends AppTextStyles {
         fontSize: 12,
         color: AppTheme.colors.stepperNextButtonDisabled,
       );
+
+  @override
+  TextStyle get titleEvent => GoogleFonts.montserrat(
+        fontWeight: FontWeight.w700,
+        fontSize: 22,
+        color: AppTheme.colors.titleEvent,
+      );
+
+  @override
+  TextStyle get titleIntegrants => GoogleFonts.roboto(
+        fontWeight: FontWeight.w700,
+        fontSize: 14,
+        color: AppTheme.colors.titleIntegrants,
+      );
+
+  @override
+  TextStyle get nameIntegrant => GoogleFonts.roboto(
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        color: AppTheme.colors.nameIntegrant,
+      );
+
+  @override
+  TextStyle get creditValue => GoogleFonts.roboto(
+        fontWeight: FontWeight.w700,
+        fontSize: 12,
+        color: AppTheme.colors.creditValue,
+      );
+
+  @override
+  TextStyle get debtValue => GoogleFonts.roboto(
+        fontWeight: FontWeight.w700,
+        fontSize: 12,
+        color: AppTheme.colors.debtValue,
+      );
+
+  @override
+  TextStyle get headerItens => GoogleFonts.roboto(
+        fontWeight: FontWeight.w700,
+        fontSize: 14,
+        color: AppTheme.colors.headerItens,
+      );
+
+  @override
+  TextStyle get titleItem => GoogleFonts.inter(
+        fontWeight: FontWeight.w600,
+        fontSize: 16,
+        color: AppTheme.colors.titleItem,
+      );
+
+  @override
+  TextStyle get itemTileValue => GoogleFonts.roboto(
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        color: AppTheme.colors.itemTileValue,
+      );
+
+  @override
+  TextStyle get titleTotal => GoogleFonts.roboto(
+      fontWeight: FontWeight.w700, fontSize: 16, color: AppTheme.colors.total);
+
+  @override
+  TextStyle get valueTotal => GoogleFonts.roboto(
+      fontWeight: FontWeight.w400, fontSize: 16, color: AppTheme.colors.total);
+
+  @override
+  TextStyle get debit => GoogleFonts.roboto(
+      fontWeight: FontWeight.w400, fontSize: 16, color: AppTheme.colors.debit);
 }
